@@ -14,7 +14,7 @@ pipeline {
        }
    }
        }
-      stage('clonning scm') {
+      stage('email notifications') {
         steps{
            mail bcc: '', body: '''Hi welcome to jenkins
 
