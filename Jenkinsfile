@@ -14,5 +14,13 @@ pipeline {
        }
    }
        }
+      stage('clonning scm') {
+        steps{
+           mail bcc: '', body: '''Hi welcome to jenkins
+
+          Thanks &Regards
+          Ravindra BA''', cc: '', from: '', replyTo: '', subject: 'jenkins job', to: 'ravindragowda1997@gmail.com'
+     }
+     }
    }
 }
